@@ -1,0 +1,12 @@
+<form action="/post/create" method="POST">
+  Description:<br>
+  <input type="text" name="description">
+  <br>
+  <input type="submit" value="Submit">
+  <select name="category_id">
+    <% Category.all.each do |category| %>
+      <option value=<%= category.id %> ><%= category.title %></option>
+    <% end %>
+  </select>
+</form>
+

@@ -1,0 +1,14 @@
+<h1>This is the listing of categories</h1>
+
+
+<ol>
+  <% @category.each do |category| %>
+    <li><%= category.title %></li>
+    <ul>
+      <% category.posts.each do |post| %>
+        <li><%= post.description %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</ol>
+

@@ -1,0 +1,8 @@
+<h1>This is all posts</h1>
+
+
+<ol>
+  <% @posts.each do |post| %>
+  <li><%= post.description %></li>
+  <% end %>
+</ol>
